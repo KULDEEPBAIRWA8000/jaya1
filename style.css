@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.first-section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    /* background-color: rgb(123, 85, 34); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 2.4rem;
+    text-decoration: none;
+    font-family: "Audiowide", sans-serif;
+    color: white;
+}
+
+
+.logo a span {
+    color: rgb(255, 204, 0);
+}
+
+nav {
+
+    overflow-x: hidden;
+    /* visibility: hidden; */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+nav ul li {
+    list-style: none;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #e9a12b;
+}
+
+
+
+.background-img {
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    background-image: url("https://image1.jdomni.in/banner/11082021/BC/F6/F7/D9FC7BB37487A22B47EFB56C20_1628697846701.png?output-format=webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-text {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-text h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.main-text p {
+    font-size: 2.1rem;
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+}
+
+.main-text button {
+    border: 1px solid #745015;
+    padding: 10px 30px;
+    background-color: #fcca7a;
+    color: #000;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.nav-menus {
+    position: absolute;
+    top: 24px;
+    right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.close {
+    visibility: hidden;
+    cursor: pointer;
+    color: white;
+}
+
+.menu {
+    visibility: hidden;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .nav-bar {
+        width: 100%;
+        height: 300px;
+        background-color: #000000d9;
+        position: absolute;
+        top: 70px;
+        right: center;
+        z-index: 1;
+    }
+
+    .nav-hidden {
+        visibility: hidden;
+    }
+
+
+    nav ul li a {
+        color: #ffffff;
+    }
+
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+    .close-btn {
+        visibility: visible;
+    }
+
+    .nav-menus {
+        position: absolute;
+        top: 24px;
+        right: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+
+    }
+
+    .main-text p{
+        text-align: center;
+    }
+
+
+
+
+    .menuBtn {
+        visibility: visible;
+        color: white;
+        cursor: pointer;
+    }
+
+    .manu-hidden {
+        visibility: hidden;
+    }
+
+    .logo {
+        width: 80%;
+        display: flex;
+        padding-left: 100px;
+    }
+
+    .logo a {
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .logo {
+        padding: 0;
+        font-size: 10px;
+    }
+
+    .logo a {
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    .background-img {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .main-text{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -40px;
+        align-items: center;
+    }
+
+    .main-text h1{
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    .main-text p{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .nav-hidden {
+        visibility: hidden;
+    }
+
+    .menuBtn {
+        visibility: visible;
+        color: white;
+        cursor: pointer;
+    }
+
+    .manu-hidden {
+        visibility: hidden;
+    }
+
+
+}

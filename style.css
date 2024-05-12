@@ -20,6 +20,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #ba0404aa;
+    position: fixed;
 }
 
 .logo a {
@@ -75,7 +77,7 @@ nav ul li a:hover {
     top: 0;
     left: 0;
     z-index: -10;
-    background-image: url("https://image1.jdomni.in/banner/11082021/BC/F6/F7/D9FC7BB37487A22B47EFB56C20_1628697846701.png?output-format=webp");
+    background-image: url("img/0.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -139,8 +141,77 @@ nav ul li a:hover {
 }
 
 
+.second-section{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #745015; */
+}
 
 
+.second-section h1{
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 3.5rem;
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 325px;
+    height: 460px;
+    /* background-color: #fcca7a; */
+    text-align: center;
+    padding: 0 10px;
+    cursor: pointer;
+
+}
+
+.box:hover{
+    /* border: 2px solid rgba(0, 0, 0, 0.779); */
+    border-radius: 10px;
+    box-shadow:-1px 2px 2px 2px rgb(230, 219, 219);
+}
+
+
+.box .img{
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    
+}
+.box .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+}
+
+.text p{
+    padding: 15px 0;
+    color: rgba(94, 74, 74, 0.884);
+}
+
+.text button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color:#fec467 ;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.text button:hover{
+background-color: #f9ae22;
+}
 
 
 

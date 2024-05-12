@@ -77,7 +77,7 @@ nav ul li a:hover {
     top: 0;
     left: 0;
     z-index: -10;
-    background-image: url("img/0.webp");
+    background-image: url("0.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,29 +141,29 @@ nav ul li a:hover {
 }
 
 
-.second-section{
+.second-section {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     /* background-color: #745015; */
 }
 
 
-.second-section h1{
+.second-section h1 {
     text-align: center;
     font-family: "Dancing Script", cursive;
     font-size: 3.5rem;
 }
 
-.services{
+.services {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 30px;
+    padding: 0 30px;
     margin-top: 40px;
     flex-wrap: wrap;
 }
 
-.box{
+.box {
     width: 325px;
     height: 460px;
     /* background-color: #fcca7a; */
@@ -173,45 +173,125 @@ nav ul li a:hover {
 
 }
 
-.box:hover{
+.box:hover {
     /* border: 2px solid rgba(0, 0, 0, 0.779); */
     border-radius: 10px;
-    box-shadow:-1px 2px 2px 2px rgb(230, 219, 219);
+    box-shadow: -1px 2px 2px 2px rgb(230, 219, 219);
 }
 
 
-.box .img{
+.box .img {
     width: 250px;
     height: 250px;
     margin: 20px auto;
-    
+
 }
-.box .img img{
+
+.box .img img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    
+
 }
 
-.text p{
+.text p {
     padding: 15px 0;
     color: rgba(94, 74, 74, 0.884);
 }
 
-.text button{
+.text button {
     padding: 10px 20px;
     border-radius: 20px;
     border: none;
-    background-color:#fec467 ;
+    background-color: #fec467;
     font-weight: 500;
     text-align: center;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s linear;
 }
-.text button:hover{
-background-color: #f9ae22;
+
+.text button:hover {
+    background-color: #f9ae22;
 }
+
+
+.thred-section {
+    width: 100%;
+    height: 100%;
+    /* background-color: #e9a12b; */
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px 0;
+}
+
+.about-first {
+    width: 47%;
+    height: 80vh;
+    /* background-color: #745015; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px 40px;
+}
+
+.about-second {
+    width: 47%;
+    height: 80vh;
+    background-image: url(44.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-position: center center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.about-second:hover {
+    animation: shrink 2s ease-in-out alternate;
+}
+
+@keyframes shrink {
+    0% {
+        background-size: 100% 100%;
+    }
+
+    100% {
+        background-size: 100% 120%;
+    }
+}
+
+
+.about-first h1 {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 3rem;
+}
+
+.about-first p{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #000000da;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -261,7 +341,7 @@ background-color: #f9ae22;
 
     }
 
-    .main-text p{
+    .main-text p {
         text-align: center;
     }
 
@@ -287,6 +367,36 @@ background-color: #f9ae22;
     .logo a {
         font-size: 2rem;
     }
+
+
+    .thred-section {
+        width: 100%;
+        height: 100%;
+        /* background-color: #e9a12b; */
+        display: flex;
+        justify-content: space-evenly;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 100px 0;
+        flex-direction: column;
+    }
+
+    .about-first h1{
+        font-size: 2rem;
+           width: 200px;
+    }
+
+    .about-first p{
+        width: 100vw;
+        padding: 10px ;
+        font-size: 1.1rem;
+    }
+
+    .about-second{
+        width: 100%;
+    }
+
 }
 
 
@@ -307,7 +417,7 @@ background-color: #f9ae22;
         height: 60vh;
     }
 
-    .main-text{
+    .main-text {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -315,11 +425,12 @@ background-color: #f9ae22;
         align-items: center;
     }
 
-    .main-text h1{
+    .main-text h1 {
         text-align: center;
         font-size: 1.7rem;
     }
-    .main-text p{
+
+    .main-text p {
         text-align: center;
         font-size: 1.2rem;
     }
